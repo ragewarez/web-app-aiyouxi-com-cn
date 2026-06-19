@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ragewarez.github.io/web-app-aiyouxi-com-cn/sitemap.xml

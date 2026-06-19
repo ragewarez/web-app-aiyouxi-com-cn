@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>爱游戏 - 产品说明与使用指引</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f8f6f0;
+            color: #2e2b26;
+            font-family: 'Noto Serif SC', 'Source Han Serif SC', 'Georgia', 'Times New Roman', serif;
+            line-height: 1.75;
+            padding: 2rem 1.5rem;
+            min-height: 100vh;
+        }
+
+        .page {
+            max-width: 780px;
+            margin: 0 auto;
+            background: #fefcf8;
+            padding: 2.5rem 2rem;
+            border-radius: 24px;
+            box-shadow: 0 8px 28px rgba(0, 0, 0, 0.03), 0 2px 6px rgba(0, 0, 0, 0.02);
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 2.2rem;
+            padding-bottom: 1.8rem;
+            border-bottom: 1px solid #e6e0d4;
+        }
+
+        .hero h1 {
+            font-size: 2.4rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            color: #3c362f;
+            margin-bottom: 0.4rem;
+        }
+
+        .hero .sub {
+            font-size: 1rem;
+            color: #8f867c;
+            font-style: italic;
+            letter-spacing: 0.5px;
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin: 2rem 0 0.8rem 0;
+            padding-left: 0.6rem;
+            border-left: 4px solid #c7b9a6;
+            color: #3f3933;
+        }
+
+        .section-title:first-of-type {
+            margin-top: 0.2rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            font-size: 1.02rem;
+        }
+
+        .highlight-box {
+            background: #f4efe7;
+            border-left: 5px solid #b7a694;
+            padding: 1.2rem 1.5rem;
+            margin: 1.4rem 0;
+            border-radius: 0 12px 12px 0;
+            font-size: 0.98rem;
+            color: #3a342e;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.02);
+        }
+
+        .highlight-box strong {
+            color: #4d4239;
+        }
+
+        .tip-card {
+            background: #f2ede4;
+            padding: 1.2rem 1.4rem;
+            border-radius: 18px;
+            margin: 1.5rem 0;
+            border: 1px solid #e2d9cc;
+            font-size: 0.98rem;
+        }
+
+        .tip-card .tip-label {
+            font-weight: 600;
+            display: inline-block;
+            background: #d6cbbc;
+            color: #2f2a25;
+            padding: 0.2rem 1rem;
+            border-radius: 30px;
+            font-size: 0.8rem;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 1.2rem 0 0.8rem 0;
+        }
+
+        .feature-item {
+            flex: 1 1 200px;
+            background: #f9f5ee;
+            padding: 1rem 1.2rem;
+            border-radius: 16px;
+            border: 1px solid #ece4d8;
+        }
+
+        .feature-item h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+            color: #4d4237;
+        }
+
+        .feature-item p {
+            font-size: 0.93rem;
+            margin-bottom: 0;
+            color: #5a524a;
+        }
+
+        .faq-item {
+            margin: 1rem 0;
+            padding: 0.6rem 0;
+            border-bottom: 1px dashed #ddd6ca;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-q {
+            font-weight: 600;
+            color: #4a4139;
+            margin-bottom: 0.2rem;
+        }
+
+        .faq-a {
+            font-size: 0.96rem;
+            color: #5d554c;
+            padding-left: 0.6rem;
+        }
+
+        .inline-link {
+            color: #6f5f4c;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-thickness: 1px;
+            text-decoration-color: #b8aa99;
+            font-weight: 500;
+            transition: color 0.2s, text-decoration-color 0.2s;
+        }
+
+        .inline-link:hover {
+            color: #3d3229;
+            text-decoration-color: #7d6b58;
+        }
+
+        .note-line {
+            font-size: 0.9rem;
+            color: #8a8075;
+            margin-top: 2rem;
+            padding-top: 1.2rem;
+            border-top: 1px solid #e5ddd1;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 1rem 0.8rem;
+            }
+            .page {
+                padding: 1.5rem 1.2rem;
+                border-radius: 18px;
+            }
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            .feature-item {
+                flex: 1 1 100%;
+            }
+            .highlight-box {
+                padding: 1rem 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="hero">
+            <h1>爱游戏</h1>
+            <div class="sub">再次遇见 · 持续关注 · 从容使用</div>
+        </div>
+
+        <p>
+            如果你曾在某个时刻浏览过 <a href="https://web-app-aiyouxi.com.cn" class="inline-link">爱游戏</a>，或许是因为某个游戏资讯、某份推荐清单，或只是想随意看看。这个页面想好好介绍一下它——不是作为广告，而是一份实在的使用说明，方便你决定是否继续关注、要不要把它放进收藏夹。
+        </p>
+
+        <div class="section-title">主要亮点</div>
+        <p>
+            <a href="https://web-app-aiyouxi.com.cn" class="inline-link">爱游戏</a> 围绕游戏内容做了比较细致的整理，信息结构比较清晰，没有多余的干扰。不管是浏览近期更新、翻阅分类索引，还是单纯想找点感兴趣的内容，都能比较快地找到入口。页面加载轻快，布局偏向阅读友好型，对再次访问的人来说几乎没有适应成本。
+        </p>
+
+        <div class="highlight-box">
+            <strong>回头客视角：</strong> 如果之前收藏过，可以直接从书签或历史记录再次进入，页面结构保持稳定，不会频繁变动到你认不出来。如果还没收藏，现在放一个也不亏——下次想找游戏相关内容时，不用重新搜索。
+        </div>
+
+        <div class="section-title">使用建议</div>
+        <div class="feature-list">
+            <div class="feature-item">
+                <h3>定期翻看</h3>
+                <p>每隔一两周回来看看，内容会有更新，但不会铺天盖地。适合当作一个安静的资讯角落。</p>
+            </div>
+            <div class="feature-item">
+                <h3>配合收藏夹</h3>
+                <p>把 <a href="https://web-app-aiyouxi.com.cn" class="inline-link">爱游戏</a> 放在一个常用分类里，比如“游戏”或“阅读”。下次想起时顺手点开，不用再纠结网址。</p>
+            </div>
+            <div class="feature-item">
+                <h3>碎片时间</h3>
+                <p>页面内容量适中，不需要一次性读完。打开看看标题和摘要，挑感兴趣的深入，很放松。</p>
+            </div>
+        </div>
+
+        <div class="tip-card">
+            <span class="tip-label">📌 收藏提示</span>
+            <p style="margin-bottom: 0;">
+                用浏览器收藏夹直接保存 <a href="https://web-app-aiyouxi.com.cn" class="inline-link">爱游戏</a> 的首页即可。如果你习惯用笔记或稍后读工具，也推荐把链接记下来。这样即使隔了很久，依然能顺利回来。
+            </p>
+        </div>
+
+        <div class="section-title">常见疑问摘要</div>
+        <div class="faq-item">
+            <div class="faq-q">Q: 需要注册或登录吗？</div>
+            <div class="faq-a">不需要。直接打开页面就能浏览，没有强制注册环节，也不要求留下个人信息。</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">Q: 内容会频繁变化吗？</div>
+            <div class="faq-a">会有更新，但整体框架和主要分类相对稳定。你不用担心每次打开都认不出布局。</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-q">Q: 适合长期关注吗？</div>
+            <div class="faq-a">如果你对游戏领域保持兴趣，这里的内容节奏和风格比较适合细水长流地看，不必每天刷。</div>
+        </div>
+
+        <p style="margin-top: 1.6rem;">
+            说到底，一个网站值不值得再次访问，取决于它是否持续提供靠谱的内容，以及你是否记得在哪里找到它。<a href="https://web-app-aiyouxi.com.cn" class="inline-link">爱游戏</a> 在这两点上都做得比较踏实。如果你觉得它还不错，不妨留个书签；如果只是路过，那也随时欢迎下次再来。
+        </p>
+
+        <div class="note-line">
+            保持关注 · 不打扰 · 像一本随时翻开的游戏笔记
+        </div>
+    </div>
+</body>
+</html>
