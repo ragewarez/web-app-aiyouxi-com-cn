@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5">
+  <title>威廉希尔 · 稳定入口与页面说明</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background: #f1f8f9;
+      color: #1c2e33;
+      line-height: 1.6;
+      padding: 0 1rem 3rem;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    /* ---------- hero ---------- */
+    .hero {
+      background: linear-gradient(145deg, #0d4f5c 0%, #1c7c8c 100%);
+      border-radius: 2rem 2rem 1.5rem 1.5rem;
+      padding: 3.5rem 2rem 3rem;
+      margin: 1.5rem 0 2.5rem;
+      color: white;
+      text-align: center;
+      box-shadow: 0 12px 28px rgba(6, 60, 70, 0.18);
+    }
+
+    .hero h1 {
+      font-size: 2.4rem;
+      letter-spacing: 0.03em;
+      font-weight: 600;
+      margin-bottom: 0.6rem;
+    }
+
+    .hero h1 small {
+      font-weight: 300;
+      font-size: 1rem;
+      display: block;
+      margin-top: 0.2rem;
+      opacity: 0.85;
+    }
+
+    .hero .tagline {
+      font-size: 1.1rem;
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(4px);
+      display: inline-block;
+      padding: 0.5rem 1.8rem;
+      border-radius: 40px;
+      margin-bottom: 1.2rem;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: 0 auto 0.4rem;
+      font-size: 1.05rem;
+      opacity: 0.92;
+    }
+
+    .hero .action-hint {
+      margin-top: 1.2rem;
+      font-size: 0.95rem;
+      background: rgba(0, 0, 0, 0.15);
+      padding: 0.6rem 1.2rem;
+      border-radius: 36px;
+      display: inline-block;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+    }
+
+    .hero .action-hint a {
+      color: #e2f8ff;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      font-weight: 500;
+    }
+
+    /* ---------- 网格卡片 ---------- */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    .card {
+      background: white;
+      border-radius: 1.25rem;
+      padding: 1.5rem 1.3rem;
+      box-shadow: 0 4px 14px rgba(0, 40, 48, 0.05);
+      border: 1px solid #daedf0;
+      transition: transform 0.15s ease, box-shadow 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 24px rgba(13, 79, 92, 0.10);
+    }
+
+    .card h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.65rem;
+      color: #0a4e5a;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .card h3::before {
+      content: "◆";
+      font-size: 0.85rem;
+      color: #25a5b9;
+    }
+
+    .card p {
+      font-size: 0.94rem;
+      color: #2e4b52;
+    }
+
+    .card .badge {
+      display: inline-block;
+      background: #def3f6;
+      color: #0a5a66;
+      padding: 0.15rem 0.7rem;
+      border-radius: 30px;
+      font-size: 0.75rem;
+      margin-top: 0.5rem;
+      font-weight: 500;
+    }
+
+    /* ---------- 说明区 ---------- */
+    .info-section {
+      background: white;
+      border-radius: 1.5rem;
+      padding: 2rem 1.8rem;
+      margin: 2rem 0;
+      border: 1px solid #cee5e9;
+      box-shadow: 0 4px 12px rgba(0, 32, 40, 0.03);
+    }
+
+    .info-section h2 {
+      font-size: 1.3rem;
+      color: #07444f;
+      margin-bottom: 0.8rem;
+      border-left: 4px solid #1f9aae;
+      padding-left: 0.9rem;
+    }
+
+    .info-section p, .info-section li {
+      font-size: 0.96rem;
+      color: #1f4048;
+    }
+
+    .info-section ul {
+      list-style: none;
+      margin-top: 0.6rem;
+    }
+
+    .info-section ul li {
+      padding: 0.3rem 0 0.3rem 1.6rem;
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="%231f9aae" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>') left center no-repeat;
+      background-size: 14px;
+      margin-bottom: 0.1rem;
+    }
+
+    /* ---------- FAQ摘要 ---------- */
+    .faq-summary {
+      background: #e7f4f6;
+      border-radius: 1.5rem;
+      padding: 1.6rem 1.8rem;
+      margin: 2rem 0;
+    }
+
+    .faq-summary h2 {
+      font-size: 1.2rem;
+      color: #0b4d59;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+
+    .faq-item {
+      margin-bottom: 1rem;
+    }
+
+    .faq-item strong {
+      display: block;
+      font-weight: 600;
+      color: #04323c;
+      margin-bottom: 0.2rem;
+    }
+
+    .faq-item p {
+      font-size: 0.92rem;
+      color: #1b4750;
+    }
+
+    .faq-more {
+      text-align: right;
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+    }
+
+    .faq-more a {
+      color: #086d7c;
+      text-decoration: none;
+      border-bottom: 1px dashed #0f889b;
+    }
+
+    /* ---------- 底部 ---------- */
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem 1.8rem;
+      margin: 2.5rem 0 1.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #cde0e3;
+      font-size: 0.9rem;
+    }
+
+    .footer-links a {
+      color: #0a5a66;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s;
+    }
+
+    .footer-links a:hover {
+      border-bottom-color: #0f889b;
+    }
+
+    .footer-note {
+      text-align: center;
+      color: #5b7b82;
+      font-size: 0.85rem;
+      margin-top: 0.3rem;
+    }
+
+    /* ---------- 响应式 ---------- */
+    @media (max-width: 680px) {
+      .hero {
+        padding: 2.2rem 1.2rem;
+        border-radius: 1.5rem;
+      }
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+      .grid-2 {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+      .info-section, .faq-summary {
+        padding: 1.3rem;
+      }
+      .footer-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .hero .tagline {
+        font-size: 0.95rem;
+        padding: 0.4rem 1rem;
+      }
+      .hero p {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <!-- hero -->
+  <section class="hero">
+    <span class="tagline">William Hill 稳定入口 · 中文指引</span>
+    <h1>威廉希尔<small>信息聚合 · 页面说明</small></h1>
+    <p>面向需要快速查找威廉希尔服务入口的用户，本页整合了关键说明、常见要点及官方路径指引，帮助你在不同设备上保持顺畅的访问体验。</p>
+    <div class="action-hint">
+      访问官方站点：<a href="https://www2-williamhill.com">威廉希尔</a>
+    </div>
+  </section>
+
+  <!-- 优势网格卡片 -->
+  <div class="grid-2">
+    <div class="card">
+      <h3>稳定入口</h3>
+      <p>持续维护的域名与备用路径，降低访问中断概率。建议通过本页提供的链接进入，并核对页面标识。</p>
+      <span class="badge">长期有效</span>
+    </div>
+    <div class="card">
+      <h3>轻量说明</h3>
+      <p>不保留复杂跳转逻辑，只提供必要的介绍与操作提示，减少混淆。适合首次接触或需要快速确认的用户。</p>
+      <span class="badge">一目了然</span>
+    </div>
+    <div class="card">
+      <h3>多端适配</h3>
+      <p>页面针对手机、平板及桌面均优化了卡片与文字间距，无论使用何种设备均能清晰阅读核心内容。</p>
+      <span class="badge">响应式</span>
+    </div>
+    <div class="card">
+      <h3>信息克制</h3>
+      <p>不渲染冗余数据，不夸大功能。只陈述可验证的事实与常规操作建议，帮助你理性判断。</p>
+      <span class="badge">真实友好</span>
+    </div>
+  </div>
+
+  <!-- 说明区：从页面说明角度 -->
+  <section class="info-section">
+    <h2>页面功能与使用场景</h2>
+    <p>本页旨在为需要了解威廉希尔服务结构的用户提供一份简洁的参考。你可以通过以下方式充分利用此页：</p>
+    <ul>
+      <li>将页面收藏，作为快速访问威廉希尔的稳定跳转点。</li>
+      <li>阅读 FAQ 摘要，快速了解常见问题中的关键信息。</li>
+      <li>在更换设备或网络环境时，通过本页核对官方入口的可用性。</li>
+      <li>分享给有同样需求的用户，减少重复查找时间。</li>
+    </ul>
+    <p style="margin-top: 0.8rem;">始终建议通过官方网站 <a href="https://www2-williamhill.com" style="color:#086d7c;text-decoration:underline;text-underline-offset:2px;">威廉希尔</a> 进行后续操作，确保信息源可靠。</p>
+  </section>
+
+  <!-- FAQ摘要 -->
+  <section class="faq-summary">
+    <h2>FAQ 摘要</h2>
+    <div class="faq-item">
+      <strong>问：如何确认访问的是威廉希尔官方页面？</strong>
+      <p>建议核对域名是否为 www2-williamhill.com，并观察页面整体风格与功能布局是否一致。如有疑问可暂时退出并通过其他渠道核实。</p>
+    </div>
+    <div class="faq-item">
+      <strong>问：为什么需要“稳定入口”？</strong>
+      <p>由于网络环境差异，某些地区或运营商可能会限制访问。备用入口与持续维护的域名可以提供更多访问可能性，但同样需注意安全。</p>
+    </div>
+    <div class="faq-item">
+      <strong>问：本页面会收集用户信息吗？</strong>
+      <p>本页为纯静态介绍页，不包含任何分析脚本、表单或 Cookie 收集功能。所有链接均指向官方站点，无中间跳转。</p>
+    </div>
+    <div class="faq-more">
+      <a href="https://www2-williamhill.com">威廉希尔</a>
+    </div>
+  </section>
+
+  <!-- 底部链接 -->
+  <footer class="footer-links">
+    <a href="https://www2-williamhill.com">威廉希尔</a>
+    <span style="color:#7f9ca3;">·</span>
+    <a href="#">关于本页</a>
+    <span style="color:#7f9ca3;">·</span>
+    <a href="#">使用建议</a>
+    <span style="color:#7f9ca3;">·</span>
+    <a href="#">反馈</a>
+  </footer>
+  <div class="footer-note">
+    内容仅供信息参考 · 请自行甄别网络环境 · 无诱导行为
+  </div>
+
+</div>
+</body>
+</html>
